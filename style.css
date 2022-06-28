@@ -1,0 +1,129 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    height: 380px;
+    width: 290px;
+    background-color: transparent;
+    margin: 10px;
+    border: 1px solid rgb(26, 3, 3);
+    backdrop-filter: blur;
+    transform-style: preserve-3d;
+    transform: rotateX(150);
+    border-top: 1px solid rgb(234, 218, 194);
+    border-radius: 15px;
+    border-right: 2px solid rgb(232, 215, 190);
+    border-left: rgb(15, 13, 13);
+    /* text-align: left; */
+    position: relative;
+    box-shadow: 20px 20px 50px rgb(232, 215, 190);
+
+}
+
+
+.content {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+header {
+    margin-top: 20px;
+    text-align: center;
+    color: white1;
+    backdrop-filter: blur;
+
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
+
+p {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 15px;
+    color: white;
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 19px;
+    color: white;
+    margin: 25px;
+    letter-spacing: 30px;
+    transition: transform 1.4s ease-in-out;
+}
+
+.icon i {
+    font-size: 30px;
+}
+
+.bxl-reddit {
+    color: rgb(87, 159, 87);
+    transition: transform 2s ease-in-out;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+i:hover .bxl-reddit {
+    transform: translate3d(0, -10px, 20px);
+    color: #00acee;
+}
+
+i:hover .bxl-twitter {
+    transform: translate3d(0, -10px, 20px);
+    color: #00acee;
+}
+
+i:hover .bxl-linkedin {
+    transform: translate3d(0, -10px, 20px);
+    color: #00acee;
+}
+
+.icon:hover{
+    transform: scale(2);
+}
+
+@media screen and (max-width: 480px) {
+   .container{
+    height: 200vh;
+   }
+  }
